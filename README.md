@@ -39,3 +39,9 @@ Follow these steps to set up and run the project:
      - Database connection details
      - Minio access key and secret key
      - Postman API details
+
+10. ### Run ingestion script
+    - Navigate to the cloned repository:
+     `cd scripts`
+    - Run `python ingestion_main.py`
+    This will run ingestion for source_id which is API, to run for other sources update source_id and source_name in `ingestion_main.py`
