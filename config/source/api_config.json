@@ -1,0 +1,26 @@
+{
+    "source_id": "1",
+    "source_name": "API",
+    "s3_config": {
+        "bucket_name": "dev-s3-bucket",
+        "prefix": "raw"
+    },
+    "base_url": "https://postman-echo.com",
+    "tables": {
+        "exchange_rates": {
+            "endpoint": "/api/exchange_rates",
+            "is_active": true,
+            "load_type": "full"
+        },
+        "customer_data": {
+            "endpoint": "/api/customer_data",
+            "is_active": true,
+            "load_type": "full"
+        },
+        "temp": {
+            "endpoint": "",
+            "is_active": false,
+            "load_type": "icremental"
+        }
+    }
+}

@@ -1,0 +1,49 @@
+C:.
+│   .gitignore
+│   commands.txt
+│   docker-compose.yaml
+│   README.md
+│   requirements.txt
+│   __init__.py
+│   
+├───config
+│   └───source
+│           api_config.json
+│           files_config.json
+│           sql_config.json
+│
+├───scripts
+│   │   constants.py
+│   │   definitions.py
+│   │   ingestion_main.py
+│   │   __init__.py
+│   │
+│   ├───utils
+│   │   │   date_utils.py
+│   │   │   db_utils.py
+│   │   │   file_utils.py
+│   │   │   log_utils.py
+│   │   │   s3_utils.py
+│   │   │   secret_utils.py
+│   │   │   source_connectors.py
+│   │   │   __init__.py
+│   │
+│   ├───wrappers
+│   │   │   api_ingestion.py
+│   │   │   base_connector.py
+│   │   │   files_ingestion.py
+│   │   │   sql_ingestion.py
+│   │   │   __init__.py
+│
+├───setup_scripts
+│       setup_postgres.py
+│       __init__.py
+│
+└───sql
+    └───ddl
+            customer_data.sql
+            exchange_rates.sql
+            products.sql
+            sales_data.sql
+            setup_ddls.sql
+            transactions.sql

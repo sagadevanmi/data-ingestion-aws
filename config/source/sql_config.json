@@ -1,0 +1,22 @@
+{
+    "source_id": "3",
+    "source_name": "SQL",
+    "s3_config": {
+        "bucket_name": "dev-s3-bucket",
+        "prefix": "raw"
+    },
+    "tables": {
+        "products": {
+            "is_active": true,
+            "load_type": "full"
+        },
+        "transactions": {
+            "is_active": true,
+            "load_type": "full"
+        },
+        "temp": {
+            "is_active": false,
+            "load_type": "icremental"
+        }
+    }
+}

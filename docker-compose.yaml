@@ -1,0 +1,33 @@
+version: '3.7'
+services:
+  minio:
+    image: quay.io/minio/minio
+    environment:
+      - MINIO_ROOT_USER=admin
+      - MINIO_ROOT_PASSWORD=minio123
+    container_name: minio_s3
+    ports:
+      - '9000:9000'
+      - '9003:9003'
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - C:/Users/sagad/Desktop/minio_s3:/data # Needs to be modified based on location of local system path
+    command: server /data --console-address ":9003"
+    # postgres:
+    #   container_name: sd_postgres
+    #   build:
+    #     context: .
+    #     dockerfile: ./DockerFile
+    #   ports:
+    #     - '5441:5441'
+    #   environment:
+    #     - POSTGRES_USER=postgres
+    #     - POSTGRES_PASSWORD=pwd123
+    #     - POSTGRES_DB=DB
+    #     - ACCEPT_EULA=1
+    # networks:
+    #   - db-tier
+    # network_mode: "bridge"
+    # volumes:
+    # - C:/Users/sagad/Desktop/sd_postgres:/var/lib/postgresql/data # Needs to be modified based on location of local system path
+    # - ./setup.sql:/docker-entrypoint-initdb.d/create_tables.sql

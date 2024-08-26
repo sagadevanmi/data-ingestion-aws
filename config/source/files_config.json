@@ -1,0 +1,20 @@
+{
+    "source_id": "2",
+    "source_name": "Files",
+    "s3_config": {
+        "bucket_name": "dev-s3-bucket",
+        "prefix": "raw"
+    },
+    "base_location": "SourceFiles",
+    "tables": {
+        "sales_data": {
+            "is_active": true,
+            "load_type": "full",
+            "extension": "csv"
+        },
+        "temp": {
+            "is_active": false,
+            "load_type": "icremental"
+        }
+    }
+}

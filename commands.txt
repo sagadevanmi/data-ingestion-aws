@@ -1,0 +1,2 @@
+docker run -p 9000:9000 -p 9001:9001 --name minio1 -e "MINIO_ROOT_USER=admin" -e "MINIO_ROOT_PASSWORD=minio123" -v C:\Users\sagad\Desktop\Xtage\S3-mock:/data quay.io/minio/minio server /data --console-address ":9001"
+docker run -p 9000:9000 -p 9001:9001 --name minio1 -e "MINIO_ACCESS_KEY=minio_access_key" -e "MINIO_SECRET_KEY=minio_secret_key" -v C:\Users\sagad\Desktop\Xtage\S3-mock:/data minio/minio server /data --console-address ":9001"

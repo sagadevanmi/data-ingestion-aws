@@ -1,0 +1,8 @@
+sqlalchemy
+pandas
+requests
+boto3
+awswrangler
+pg8000
+psycopg2
+sqlparse
