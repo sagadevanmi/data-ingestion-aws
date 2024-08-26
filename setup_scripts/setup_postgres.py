@@ -8,7 +8,7 @@ from sqlalchemy import Engine, create_engine
 from sqlalchemy import exc as sqla_exc
 from sqlalchemy import inspect
 
-sys.path.append("C:\\Users\\sagad\\Desktop\\Xtage\\data-ingestion-aws")
+sys.path.append("C:\\Users\\sagad\\Desktop\\data-ingestion-aws")
 from pathlib import Path
 
 from scripts.definitions import SCRIPTS_DIR
