@@ -41,7 +41,7 @@ Follow these steps to set up and run the project:
      - Postman API details
 
 10. ### Setup Postgres source
-   - Navigate to the setup_scripts folder:
+    - Navigate to the setup_scripts folder:
      `cd setup_scripts`
     - Run `python setup_postgres.py`
 
